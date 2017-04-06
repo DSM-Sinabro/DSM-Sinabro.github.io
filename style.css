@@ -30,20 +30,20 @@ body{
     background-color: #ffc93b;
 }
 
-h1,h3{
+#main h1,h3{
     text-align: center;
     color: #fff;
     margin: 0;
 }
-h3{
-    padding-top: 16%;
+#main h3{
+    padding-top: 18%;
     font-size: 2rem;
 }
 
-h1{
+#main h1{
     font-size: 9rem;
     font-weight: lighter;
-    margin-top: 2%;
+    /*margin-top: 2%;*/
 }
 
 button{
@@ -62,7 +62,7 @@ button{
 }
 
 button:hover{
-    color: #ffb03b;
+    color: #ffc93b;
     background-color: #fff;
 }
 
@@ -74,7 +74,7 @@ nav{
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-ul{
+nav ul{
     float: right;
     padding: 0;
     list-style: none;
@@ -83,14 +83,15 @@ ul{
     font-family: nanum-square;
 }
 
-li{
+nav li{
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem;
+    color: #000;
     transition: font-size 0.5s;
 }
 
-li:hover{
+nav li:hover{
     cursor: pointer;
     font-size: 1.5rem;
 }
@@ -98,4 +99,63 @@ li:hover{
 .views{
     height: 100vh;
     width: 100vw;
+}
+
+#intro{
+    background-color: #fff;
+}
+#intro h2{
+    font-family: "LeeHyunJin";
+    color: #000;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 10%;
+    font-weight: bolder;
+    margin: 0;
+}
+
+#member{
+    background-color: #ffc93b;
+}
+
+#member ul{
+    
+    padding: 0;
+    margin: auto;
+    width: 80vw;
+    padding-top: 10%;
+    font-size: 0;
+}
+
+#member li{
+    display: inline-block;
+    width: 11vw;
+    height: 11vw;
+    font-size: 1rem;
+    margin: calc(14vw/12);
+    background-color: #fff;
+    border-radius: 100%;
+    text-align: center;
+}
+
+#member li:hover{
+    background-color: #ffc93b;
+    column-rule: #fff;
+}
+ #member li:hover::before{
+    position: relative;
+    content: "강석진";
+    bottom: 25%;
+    /*font-family: "nanum-pen";*/
+    font-family: "YoonSHO";
+    font-weight: border;
+    font-size: 1.5rem;
+ }
+
+::-webkit-scrollbar{
+    overflow-y: hidden;
+}
+
+body{
+    overflow-x: hidden;
 }
