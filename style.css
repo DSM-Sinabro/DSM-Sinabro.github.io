@@ -1,5 +1,10 @@
 body{
     margin: 0;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    overflow-y: hidden;
 }
 @font-face{
     font-family: 'nanum-godic';
@@ -17,14 +22,6 @@ body{
 @font-face{
     font-family: 'YoonSJY';
     src: url('fonts/YoonSJY.ttf');
-}
-@font-face{
-    font-family: 'YoonSHO';
-    src: url('fonts/YoonSHO.ttf');
-}
-@font-face{
-    font-family: 'LeeHyunJin';
-    src: url('fonts/LeeHyunji.ttf');
 }
 #main{
     background-color: #ffc93b;
@@ -105,7 +102,7 @@ nav li:hover{
     background-color: #fff;
 }
 #intro h2{
-    font-family: "LeeHyunJin";
+    font-family: "YoonSJY";
     color: #000;
     font-size: 3rem;
     text-align: center;
@@ -117,13 +114,20 @@ nav li:hover{
 #member{
     background-color: #ffc93b;
 }
+#member h1{
+    text-align: center;
+    margin: 0;
+    padding-top: 4rem;
+    font-family: 'nanum-godic';
+    font-size: 3rem;
+}
 
 #member ul{
     
     padding: 0;
     margin: auto;
     width: 80vw;
-    padding-top: 10%;
+    padding-top: 3%;
     font-size: 0;
 }
 
@@ -139,23 +143,128 @@ nav li:hover{
 }
 
 #member li:hover{
+    cursor: pointer;
+}
+
+
+#member li:nth-child(1){
+    background-image: url('imgs/sukjin.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#member li:nth-child(2){
+    background-image: url('imgs/jieun.jpg');
+    background-size: cover;
+}
+
+#member li:nth-child(3){
+    background-image: url('imgs/taeim.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#member li:nth-child(4){
+    background-image: url('imgs/namkyu.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#member li:nth-child(5){
+    background-image: url('imgs/haebin.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+#member li:nth-child(6){
+    background-image: url('imgs/younghoon.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#member li:nth-child(7){
+    background-image: url('imgs/sunglae.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+#member li:nth-child(8){
+    background-image: url('imgs/seungwoo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#member li:nth-child(9){
+    background-image: url('imgs/kyungtae.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#member li:nth-child(10){
+    background-image: url('imgs/taemin.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#member li:nth-child(11){
+    background-image: url('imgs/sunghyun.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#member li:nth-child(12){
+    background-image: url('imgs/jihu.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#member li:nth-child(13){
+    background-image: url('imgs/sangwoo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+table{
+    font-family: "nanum-pen";
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+thead td{
+    font-size: 1.8rem;
+    height: 2rem;
+    text-align: center;
+}
+
+tbody td{
+    text-align: center;
+    height: 2rem;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+#award{
+    height: 70vh;
+    width: 100vw;
+}
+
+#inquire{
+    height: 30vh;
+    width: 100vw;
     background-color: #ffc93b;
-    column-rule: #fff;
 }
- #member li:hover::before{
-    position: relative;
-    content: "강석진";
-    bottom: 25%;
-    /*font-family: "nanum-pen";*/
-    font-family: "YoonSHO";
-    font-weight: border;
-    font-size: 1.5rem;
- }
-
-::-webkit-scrollbar{
-    overflow-y: hidden;
+#contact{
+    padding-top: 5vh;
+    padding-left: 35vw;
+    text-align: left;
 }
-
-body{
-    overflow-x: hidden;
+#contact i{
+    color: #fff;
+    font-size: 3rem;
+}
+#contact a{
+    text-decoration: none;
 }
